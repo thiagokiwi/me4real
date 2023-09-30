@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Mobility Hubs</title>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-container">
+                <a class="brand" href="/">GM Hubs</a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/register">Register</a>
+                    <a href="/create-listing">List Space</a>
+                    <!-- Additional links can be added here -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer (Optional) -->
+    <footer>
+        <p>© 2023 Green Mobility Hubs. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
